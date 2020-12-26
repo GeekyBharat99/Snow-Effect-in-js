@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snow Effect</title>
+    <style>
+        #snow {
+            position:relative;
+            margin:0 auto;
+            display:flex;
+            flex-direction:column; 
+            justify-content:center;
+            min-height:100vh;
+            background:#DF0136;
+        }
+    </style>
+</head>
+<body id="snow">
+    <center>
+        <h1 style="color: #fff; font-size: 80px;">Happy Merry Christmas And A Happy New Year.</h1>
+    </center>
+
+    <script src="snow.js"></script>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                new Snow('#snow',{
+                    number:250,// number of particles
+                    r: 4.5,// with this You can Adjust Size of Snow Particles
+                    v: 2.0,// its Speed
+                });
+            });
+        </script>
+    
+</body>
+</html>
